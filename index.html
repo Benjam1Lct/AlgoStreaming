@@ -1,0 +1,249 @@
+<!-- ta page d'acceuil tu la name toujours index, ca permet quand tu veux heberger ton site d'indiqué quelle page il faut charger en première -->
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="./css/loader.css">
+    <link rel="stylesheet" href="./css/styleNav.css">
+    <link rel="stylesheet" href="./css/styleBody.css">
+    <link rel="stylesheet" href="./css/styleIndex.css">
+    <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+    <title>ALGO</title>
+</head>
+<body class="home" id="body">
+<!--HEADER-->
+  <header class="header" id="header">
+    <nav class="nav container">
+      <a href="indexLink.html" class="nav_logo">
+        <img src="./images/logo.png" alt="">
+        Algo
+      </a>
+      <div class="nav_menu" id="nav-menu">
+        <ul class="nav_list">
+          <li class="nav_items">
+            <a href="indexLink.html" class="nav_link active_link">
+              <i class='bx bx-home-alt nav_icon'></i>
+              <span class="nav_name">Home</span>
+            </a>
+          </li>
+          <li class="nav_items">
+            <a href="categories.html" class="nav_link">
+              <i class='bx bx-collection nav_icon'></i>
+              <span class="nav_name">Categories</span>
+            </a>
+          </li>
+          <li class="nav_items">
+            <a href="about.html" class="nav_link">
+              <i class='bx bx-user nav_icon'></i>
+              <span class="nav_name">About</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <!--MAIN-->
+
+  <main class="" id="main">
+    <section class="container section section_height">
+
+      <button class="switch_theme" id="dark-mode-toggle">
+        <i class='bx bx-toggle-right switch_logo' id="button-switch-theme"></i>
+      </button>
+
+      <!--emplacement de la page de chargement-->
+      <div class="loader_wrapper">
+        <span class="loader"><span class="loader-inner"></span></span>
+      </div>
+
+
+      <!--emplacement du carousel-->
+      <!--image slider start-->
+      <div class="slider">
+        <div class="slides">
+          <!--radio button start-->
+          <input type="radio" name="radio-btn" id="radio1">
+          <input type="radio" name="radio-btn" id="radio2">
+          <input type="radio" name="radio-btn" id="radio3">
+          <input type="radio" name="radio-btn" id="radio4">
+          <!--radio button end -->
+          <!--slide images start-->
+            <div class="slide first">
+              <div class="left">
+                <h2>L'algorithme de Dijkstra</h2>
+                <p>par Maths PlusUn</p>
+                <br>
+                <a href="player2.html">Regarder<i class='bx bx-play'></i></a>
+              </div>
+              <img src="./images/miniatures/MaxDijkstra2.jpg" alt="">
+            </div>
+            <div class="slide">
+              <div class="left">
+                <h2>L'algorithme diviser pour regner</h2>
+                <p>par Mon Lycee Numerique</p>
+                <br>
+                <a href="player9.html">Regarder<i class='bx bx-play'></i></a>
+              </div>
+              <img src="./images/miniatures/MaxRegner1.jpg" alt="">
+            </div>
+            <div class="slide">
+              <div class="left">
+                <h2>L'algorithme OSPF</h2>
+                <p>par Formip</p>
+                <br>
+                <a href="player14.html">Regarder<i class='bx bx-play'></i></a>
+              </div>
+              <img src="./images/miniatures/MaxOSPF4.jpg" alt="">
+            </div>
+            <div class="slide">
+              <div class="left">
+                <h2>L'algorithme RIP</h2>
+                <p>par MOOC de l'IMT</p>
+                <br>
+                <a href="player10.html">Regarder<i class='bx bx-play'></i></a>
+              </div>
+              <img src="./images/miniatures/MaxVecteur1.jpg" alt="">
+            </div>
+      <!--image slider end-->
+        </div>
+      <!--manual navigation start-->
+          <div class="navigation-manual">
+            <label for="radio1" class="manual-btn"></label>
+            <label for="radio2" class="manual-btn"></label>
+            <label for="radio3" class="manual-btn"></label>
+            <label for="radio4" class="manual-btn"></label>
+        </div>
+      <!--manual navigation end-->
+      </div>
+      <div class="separator">
+        <div class="separator-circle-left"></div>
+        <div class="separator-line"></div>
+        <div class="separator-circle-right"></div>
+      </div>
+
+      <!--slider tendances-->
+      <section class="thumbSection">
+        <h2 class="thumbTitle">Nouveautés</h2>
+        <!-- Slider main container -->
+        <div class="thumbTiles swiper">
+          <!-- Additional required wrapper -->
+          <div class="swiper-wrapper">
+            <!-- Slides -->
+            <div class="swiper-slide">
+              <a class="thumbTile" href="player10.html">
+                <img class="thumbTile_images" src="./images/miniatures/Vecteur1.jpg" alt="">
+              </a>
+            </div>
+            <div class="swiper-slide">
+              <a class="thumbTile" href="player1.html">
+                <img class="thumbTile_images" src="./images/miniatures/Dijkstra1.jpg" alt="">
+              </a>
+            </div>
+            <div class="swiper-slide">
+              <a class="thumbTile" href="player17.html">
+                <img class="thumbTile_images" src="./images/miniatures/knn3.jpg" alt="">
+              </a>
+            </div>
+            <div class="swiper-slide">
+              <a class="thumbTile" href="player14.html">
+                <img class="thumbTile_images" src="./images/miniatures/OSPF4.jpg" alt="">
+              </a>
+            </div>
+            <div class="swiper-slide">
+              <a class="thumbTile" href="player6.html">
+                <img class="thumbTile_images" src="./images/miniatures/Arbre_binanire2.jpg" alt="">
+              </a>
+            </div>
+            <div class="swiper-slide">
+              <a class="thumbTile" href="player2.html">
+                <img class="thumbTile_images" src="./images/miniatures/Dijkstra2.jpg" alt="">
+              </a>
+            </div>
+
+          </div>
+
+          <!-- If we need navigation buttons -->
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div>
+        </div>
+      </section>
+
+      <section class="thumbSection">
+        <h2 class="thumbTitle">Tendances</h2>
+        <!-- Slider main container -->
+        <div class="thumbTiles swiper">
+          <!-- Additional required wrapper -->
+          <div class="swiper-wrapper">
+            <!-- Slides -->
+            <div class="swiper-slide">
+              <a class="thumbTile" href="player15.html">
+                <img class="thumbTile_images" src="./images/miniatures/knn1.jpg" alt="">
+              </a>
+            </div>
+            <div class="swiper-slide">
+              <a class="thumbTile" href="player9.html">
+                <img class="thumbTile_images" src="./images/miniatures/Regner1.jpg" alt="">
+              </a>
+            </div>
+            <div class="swiper-slide">
+              <a class="thumbTile" href="player11.html">
+                <img class="thumbTile_images" src="./images/miniatures/Vecteur2.jpg" alt="">
+              </a>
+            </div>
+            <div class="swiper-slide">
+              <a class="thumbTile" href="player12.html">
+                <img class="thumbTile_images" src="./images/miniatures/OSPF2.jpg" alt="">
+              </a>
+            </div>
+            <div class="swiper-slide">
+              <a class="thumbTile" href="player3.html">
+                <img class="thumbTile_images" src="./images/miniatures/Dijkstra3.jpg" alt="">
+              </a>
+            </div>
+            <div class="swiper-slide">
+              <a class="thumbTile" href="player4.html">
+                <img class="thumbTile_images" src="./images/miniatures/Dijkstra4.jpg" alt="">
+              </a>
+            </div>
+
+          </div>
+
+          <!-- If we need navigation buttons -->
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div>
+        </div>
+
+      </section>
+
+      <footer>
+        <div class="footer">
+          <div class="names">
+            <div class="logo">
+              <p>
+                <img src="./images/validateCSS.gif" alt="">
+              </p>
+              <p>
+                <img src="./images/validateHTML.png" alt="">
+              </p>
+            </div>
+            <p>Benjamin LECOMTE</p>
+            <p>Guillaume BRUNET</p>
+            <p>Clement LEROULEY</p>
+          </div>
+        </div>
+      </footer>
+    </section>
+  </main>
+
+
+<script src="./js/jquery.js"></script>
+<script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+<script src="./js/theme.js" defer></script>
+<script src="./js/loader.js" defer></script>
+<script src="./js/carousel.js" defer></script>
+<script src="./js/tendance-1.js" defer></script>
+</body>
+</html>
